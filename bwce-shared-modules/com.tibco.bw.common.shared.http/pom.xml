@@ -6,9 +6,11 @@
     <groupId>com.tibco.bw</groupId>
     <artifactId>com.tibco.bw.helloworld.application.parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <relativePath>../com.tibco.bw.helloworld.application.parent</relativePath>
+    <relativePath>../../bwce-hello-world-app/com.tibco.bw.helloworld.application.parent</relativePath>
   </parent>
+  <groupId>com.tibco.bw</groupId>
   <artifactId>com.tibco.bw.common.shared.http</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>bwmodule</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
