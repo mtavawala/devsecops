@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'm2'
+    }
+
+    stages {
+        stage('Checkout Codebase') {
+            steps {
+                checkout changelog: false, poll: false, scm: scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git', url: 'https://github.com/mtavawala/devsecops.git']])
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                sh 'mvn clean initialize install -f $WORKSPACE/com.tibco.bw.common.shared.http/pom.xml'
+            }
+        }
+    }
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}

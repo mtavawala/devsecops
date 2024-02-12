@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/com.tibco.bw.helloworld.HelloWorldImpl-user.json",
+        "type": "generated"
+    }]
+}

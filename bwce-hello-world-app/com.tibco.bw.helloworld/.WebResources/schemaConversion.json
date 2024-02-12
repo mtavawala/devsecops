@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/com.tibco.bw.helloworld/Service Descriptors/com.tibco.bw.helloworld.HelloWorldImpl-user.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1707443922697"
+}]}
