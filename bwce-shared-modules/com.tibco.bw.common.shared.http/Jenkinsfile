@@ -14,7 +14,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'mvn clean initialize install -f $WORKSPACE/com.tibco.bw.common.shared.http/pom.xml'
+                sh 'mvn clean initialize install -f $WORKSPACE/bwce-shared-modules/com.tibco.bw.common.shared.http/pom.xml'
             }
         }
     }
